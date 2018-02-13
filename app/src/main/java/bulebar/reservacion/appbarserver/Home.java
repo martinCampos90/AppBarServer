@@ -302,6 +302,10 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        if(id == R.id.nav_orders){
+            Intent orders = new Intent(Home.this,OrderStatus.class);
+            startActivity(orders);
+        }
       /*  if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
