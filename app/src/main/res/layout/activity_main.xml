@@ -43,7 +43,7 @@
 
         <bulebar.reservacion.appbarserver.widget.FButton
             android:id="@+id/btnSignIn"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"

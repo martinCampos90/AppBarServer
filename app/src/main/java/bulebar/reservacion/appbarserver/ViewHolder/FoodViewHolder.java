@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 import bulebar.reservacion.appbarserver.Common.Common;
 import bulebar.reservacion.appbarserver.Interface.ItemClickListener;
 import bulebar.reservacion.appbarserver.R;
@@ -15,20 +14,20 @@ import bulebar.reservacion.appbarserver.R;
  * Created by MDJ16 on 12/02/2018.
  */
 
-public class MenuViewHolder extends RecyclerView.ViewHolder implements
+public class FoodViewHolder extends RecyclerView.ViewHolder implements
         View.OnClickListener,
         View.OnCreateContextMenuListener{
 
-    public TextView txtMenuName;
-    public ImageView imageView;
+    public TextView food_name;
+    public ImageView food_image;
 
     private ItemClickListener itemClickListener;
 
-    public MenuViewHolder (View itemView){
+    public FoodViewHolder (View itemView){
         super(itemView);
 
-        txtMenuName = (TextView)itemView.findViewById(R.id.menu_name);
-        imageView = (ImageView)itemView.findViewById(R.id.menu_image);
+        food_name = (TextView)itemView.findViewById(R.id.food_name);
+        food_image = (ImageView)itemView.findViewById(R.id.food_image);
 
         itemView.setOnCreateContextMenuListener(this);
         itemView.setOnClickListener(this);
