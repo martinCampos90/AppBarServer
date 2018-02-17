@@ -42,6 +42,7 @@ import java.util.UUID;
 
 import bulebar.reservacion.appbarserver.Common.Common;
 import bulebar.reservacion.appbarserver.Interface.ItemClickListener;
+import bulebar.reservacion.appbarserver.Service.ListenOrder;
 import bulebar.reservacion.appbarserver.ViewHolder.MenuViewHolder;
 import bulebar.reservacion.appbarserver.model.Category;
 import bulebar.reservacion.appbarserver.widget.FButton;
@@ -118,6 +119,10 @@ public class Home extends AppCompatActivity
         recycler_menu.setLayoutManager(layoutManager);
 
         loadMenu();
+
+        //Call service
+        Intent service = new Intent(Home.this, ListenOrder.class);
+        startService(service);
     }
 
     private void showDialog() {
